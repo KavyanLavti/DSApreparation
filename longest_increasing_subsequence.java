@@ -30,7 +30,7 @@ class Solution
                         high = m-1;
                     }
                 }
-                l1.set(low,nums[i]);
+                if(l1.get(low)<nums[i])l1.set(low,nums[i]);
             } 
         }
         return l1.size();
